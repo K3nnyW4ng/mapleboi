@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maple Boi Animation</title>
+</head>
+<body>
+  <h1>Maple Boi Animation</h1>
+  <canvas id="riveCanvas" width="500" height="500"></canvas>
+  <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const Rive = rive.Rive;
+      const riveInstance = new Rive({
+        src: 'https://k3nnyw4ng.github.io/mapleboi/maple.riv',
+        canvas: document.getElementById('riveCanvas'),
+        autoplay: true,
+      });
+    });
+  </script>
+</body>
+</html>
